@@ -26,6 +26,7 @@ class Board
   end
   
   def full?
-    
+    self.cells.any? {|cell| cell == " "} == false
   end 
+  
 end 
