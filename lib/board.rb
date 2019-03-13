@@ -40,8 +40,7 @@ class Board
   
   def valid_move?(move)
     binding.pry
-    m = move.to_i 
-    self.taken?(m)
+    self.taken?(move)
   end 
   
 end 
