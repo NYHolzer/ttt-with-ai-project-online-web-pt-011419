@@ -48,7 +48,7 @@ class Board
   def update(position, player)
     p = position.to_i - 1
     binding.pry
-    self.cells[p] = 
+    self.cells[p]
   end 
   
   
