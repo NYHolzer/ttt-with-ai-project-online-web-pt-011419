@@ -39,11 +39,9 @@ class Board
   end 
   
   def valid_move?(move)
-    if move.to_i.is_a? Integer
+    if move.to_i == [1..9]
       self.taken?(move) == false 
-    else 
-      false
-    end
+
   end 
   
 end 
