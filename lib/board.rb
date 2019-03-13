@@ -39,8 +39,8 @@ class Board
   end 
   
   def valid_move?(move)
-    m = move.to_i  
-    (1..9).to_a.any? {|num| num == m}
+    m = move.to_i 
+    self.taken?(m)
   end 
   
 end 
