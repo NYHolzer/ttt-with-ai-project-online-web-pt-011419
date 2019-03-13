@@ -40,7 +40,7 @@ class Board
   
   def valid_move?(move)
     binding.pry 
-    self.taken?(move) == false
+    self.taken?(move) == false 
   end 
   
 end 
