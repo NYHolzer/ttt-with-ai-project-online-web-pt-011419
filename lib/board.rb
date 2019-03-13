@@ -29,4 +29,18 @@ class Board
     self.cells.any? {|cell| cell == " "} == false
   end 
   
+  def turn_count
+    self.cells.count { |cell| cell == "X" || cell == "x" || cell == "O" || cell == "o"}
+  end 
+  
+  def taken? (position)
+    p = position.to_i - 1
+    self.cells[p] == "X" || self.cells[p] == "O"
+  end 
+  
+  def valid_move?(move)
+    m = move.to_i  
+    (1..9).to_a.any? {|num| num == m}
+  end 
+  
 end 
