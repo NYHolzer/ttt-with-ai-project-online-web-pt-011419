@@ -41,7 +41,7 @@ class Board
   def valid_move?(move)
     if move.to_i == [1..9]
       self.taken?(move) == false 
-
+    end
   end 
   
 end 
