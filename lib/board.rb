@@ -39,7 +39,7 @@ class Board
   end 
   
   def valid_move?(move)
-    binding.pry
+    binding.pry 
     self.taken?(move)
   end 
   
