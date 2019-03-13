@@ -46,7 +46,8 @@ class Board
   end 
   
   def update(position, player)
-    self.cells[position-1] = player[:token]
+    p = position.to_i - 1
+    self.cells[p] = player[:token]
   end 
   
   
