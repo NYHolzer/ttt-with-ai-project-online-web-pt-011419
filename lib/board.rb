@@ -47,7 +47,7 @@ class Board
   
   def update(position, player)
     p = position.to_i - 1
-    self.cells[p] 
+    self.cells[p] = player
   end 
   
   
